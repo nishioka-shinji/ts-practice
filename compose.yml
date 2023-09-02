@@ -5,3 +5,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/app
+      - node-modules:/app/node_modules
+
+volumes:
+  node-modules:
