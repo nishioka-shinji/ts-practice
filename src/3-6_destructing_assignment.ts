@@ -1,16 +1,10 @@
-const obj = {
-  str: 'helllo, world',
-  num: 1234
-};
-
-const { str } = obj;
-console.log(str);
-
 const nested = {
   num: 123,
   obj: {
-    str: 'helllo',
+    foo: 'helllo',
     num: 'world'
   }
 }
-const { name, obj: { str } } = { nested }
+const { num, obj: { foo } } = nested
+console.log(num);
+console.log(foo);
